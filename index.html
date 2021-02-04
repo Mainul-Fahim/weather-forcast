@@ -46,7 +46,7 @@
         })
         function weatherApp(cityName) {
 
-            fetch('http://api.openweathermap.org/data/2.5/weather?q='+ cityName +'&appid=d72bccb6e6c244e49af3f29a6e84f502')
+            fetch('https://api.openweathermap.org/data/2.5/weather?q='+ cityName +'&appid=d72bccb6e6c244e49af3f29a6e84f502')
                 .then(response => response.json())
                 .then(data => {
                     const temp=Math.round(data.main.temp-273);
